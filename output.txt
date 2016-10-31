@@ -1,0 +1,47 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+100.00      0.08     0.08   731820     0.11     0.11  mm_init
+  0.00      0.08     0.00  1522932     0.00     0.00  coalesce
+  0.00      0.08     0.00   791112     0.00     0.00  mm_realloc
+  0.00      0.08     0.00   790980     0.00     0.00  place
+  0.00      0.08     0.00   244083     0.00     0.00  mem_init
+  0.00      0.08     0.00   115176     0.00     0.11  mem_heapsize
+  0.00      0.08     0.00    59424     0.00     0.00  init_fsecs
+  0.00      0.08     0.00      132     0.00     0.00  mem_sbrk
+  0.00      0.08     0.00      110     0.00     0.00  eval_mm_speed
+  0.00      0.08     0.00       11     0.00     0.00  eval_libc_speed
+  0.00      0.08     0.00       11     0.00     0.00  ftimer_itimer
+  0.00      0.08     0.00       11     0.00     0.00  set_fcyc_cache_block
+  0.00      0.08     0.00        1     0.00     0.00  add_sample
+  0.00      0.08     0.00        1     0.00     0.00  printresults
+  0.00      0.08     0.00        1     0.00     0.00  set_fcyc_compensate
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
